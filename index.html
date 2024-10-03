@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>GOMOPROGRAMMER</h1>
+    <h1>User Registration Form</h1>
+    <form method="post" action="script.php">
+        NAME: <input type="text" name="user_name"><br><br>
+        AGE: <input type="text" name="user_age"><br><br>
+        NUMBER: <input type="number" name="user_number"><br><br>
+        ADDRESS: <input type="text" name="user_address"><br><br>
+        GENDER:<br>
+        <label>
+            <input type="radio" name="gender" value="male"> Male
+        </label><br>
+        <label>
+            <input type="radio" name="gender" value="female"> Female
+        </label><br>
+        <label>
+            <input type="radio" name="gender" value="other"> Other
+        </label><br><br>
+        <input type="submit" value="submit">
+    </form>
 </body>
 </html>
